@@ -1,6 +1,6 @@
 {
-	"name": "simple",
-	"version": "6.7.0",
+	"name": "Ideas en Blanco - Minimalista",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",

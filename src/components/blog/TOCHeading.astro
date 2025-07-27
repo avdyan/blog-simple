@@ -12,9 +12,12 @@ const {
 
 <li class={`${depth > 2 ? "ms-2" : ""}`}>
 	<a
-		class={`line-clamp-2 hover:text-accent ${depth <= 2 ? "mt-3" : "mt-2 text-xs"}`}
-		href={`#${slug}`}><span aria-hidden="true" class="me-0.5">#</span>{text}</a
+		class={`line-clamp-2 hover:text-accent transition-colors duration-200 ${depth <= 2 ? "mt-3" : "mt-2 text-xs"}`}
+		href={`#${slug}`}
+		data-toc-link={slug}
 	>
+		<span aria-hidden="true" class="me-0.5">#</span>{text}
+	</a>
 	{
 		!!children.length && (
 			<ol>
@@ -25,3 +28,11 @@ const {
 		)
 	}
 </li>
+
+<style>
+	@reference "../../../src/styles/global.css";
+
+	a[data-toc-link].active {
+		@apply text-accent bg-accent/10 rounded px-2 py-1 font-semibold;
+	}
+</style>

@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer.astro";
 import Header from "@/components/layout/Header.astro";
 import { siteConfig } from "@/site.config";
 import type { SiteMeta } from "@/types";
+import "@/styles/components/gradients.css";
 
 interface Props {
 	meta: SiteMeta;
@@ -25,6 +26,11 @@ const {
 	>
 		<ThemeProvider />
 		<SkipLink />
+		<div class="wrapper">
+			<div class="gradient gradient_1"></div>
+			<div class="gradient gradient_2"></div>
+			<div class="gradient gradient_3"></div>
+		</div>
 		<Header />
 		<main id="main">
 			<slot />

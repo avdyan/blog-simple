@@ -17,7 +17,7 @@
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"astro.content-intellisense": true,
 	"files.associations": {
-		"*.css": "tailwindcss"
+		"*.css": "css"
 	},
 	"tailwindCSS.experimental.configFile": "./src/styles/global.css"
 }
